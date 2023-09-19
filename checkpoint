@@ -1,2 +1,2 @@
-model_checkpoint_path: "C:\\Users\\Prerak\\PycharmProjects\\auto_GTAV\\model_alexnet-2700"
-all_model_checkpoint_paths: "C:\\Users\\Prerak\\PycharmProjects\\auto_GTAV\\model_alexnet-2700"
+model_checkpoint_path: "C:\\Users\\Prerak\\PycharmProjects\\auto_GTAV\\autogta5-car-0.001-alexnetv2-10-epochs.model"
+all_model_checkpoint_paths: "C:\\Users\\Prerak\\PycharmProjects\\auto_GTAV\\autogta5-car-0.001-alexnetv2-10-epochs.model"

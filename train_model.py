@@ -5,7 +5,7 @@ from alexnet import alexnet
 WIDTH = 80
 HEIGHT = 60
 LR = 1e-3
-EPOCHS = 8
+EPOCHS = 10
 MODEL_NAME = 'autogta5-car-{}-{}-{}-epochs.model'.format(LR, 'alexnetv2', EPOCHS)
 
 model = alexnet(WIDTH, HEIGHT, LR)

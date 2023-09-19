@@ -1,4 +1,4 @@
-import  win32api as wapi
+import win32api as wapi
 
 key_list = ["\b"]
 for char in "ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890,.'$/\\":

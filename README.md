@@ -9,9 +9,9 @@ Repo for self driving cars in GTA-V using Neural Networks and Deep Learning.
 * **Nvidia Driver Version**: Nvidia Studio Driver Version 537.42
 * **CuDNN | CUDA Version:**
   > nvcc: NVIDIA (R) Cuda compiler driver
-  > 
+  >
   > Cuda compilation tools, release 11.2, V11.2.67
-  > 
+  >
   > Build cuda_11.2.r11.2/compiler.29373293_0
 * **Python**: 3.9.7
 * **GCC**: 13.2.0
@@ -24,7 +24,7 @@ Repo for self driving cars in GTA-V using Neural Networks and Deep Learning.
 5. `opencv-python == 4.8.0.76`
 6. `Pillow == 9.5.0`
 7. `pandas == 2.1.0`
-8. `pywin32	== 306`
+8. `pywin32 == 306`
 9. `tensorflow == 2.9.0`
 10. `tensorboard == 2.9.1`
 11. `tflearn == 0.5.0`

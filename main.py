@@ -6,16 +6,16 @@ import cv2
 import numpy as np
 
 from getkeys import key_check
-# from directkeys import press_key, release_key, W, A, D
+# from directkeys import press_key, release_key, WINKEY_W, WINKEY_A, WINKEY_D
 # from draw_lanes import draw_lanes
 from grabscreen import grab_screen
 
 
 def keys_to_output(keys):
-    output = [0, 0, 0]  # [A, W, D]
-    if 'A' in keys:
+    output = [0, 0, 0]  # [WINKEY_A, WINKEY_W, WINKEY_D]
+    if 'WINKEY_A' in keys:
         output[0] = 1
-    elif 'D' in keys:
+    elif 'WINKEY_D' in keys:
         output[2] = 1
     else:
         output[1] = 1
@@ -137,29 +137,29 @@ else:
 #
 #
 # def straight():
-#     press_key(W)
-#     release_key(A)
-#     release_key(D)
+#     press_key(WINKEY_W)
+#     release_key(WINKEY_A)
+#     release_key(WINKEY_D)
 #
 #
 # def left():
-#     press_key(A)
-#     release_key(W)
-#     release_key(D)
-#     release_key(A)
+#     press_key(WINKEY_A)
+#     release_key(WINKEY_W)
+#     release_key(WINKEY_D)
+#     release_key(WINKEY_A)
 #
 #
 # def right():
-#     press_key(D)
-#     release_key(A)
-#     release_key(W)
-#     release_key(D)
+#     press_key(WINKEY_D)
+#     release_key(WINKEY_A)
+#     release_key(WINKEY_W)
+#     release_key(WINKEY_D)
 #
 #
 # def slow():
-#     release_key(A)
-#     release_key(A)
-#     release_key(D)
+#     release_key(WINKEY_A)
+#     release_key(WINKEY_A)
+#     release_key(WINKEY_D)
 
 for i in range(4, 0, -1):
     print(i)
@@ -170,7 +170,7 @@ while True:
     # Capture the screen (0, 40, 800, 640)
     screen = grab_screen(region=(0, 40, 800, 630))
     screen = cv2.cvtColor(screen, cv2.COLOR_BGR2GRAY)
-    screen = cv2.resize(screen, (80, 60))
+    screen = cv2.resize(screen, (400, 315))
     keys = key_check()
     output = keys_to_output(keys)
     training_data.append([screen, output])
